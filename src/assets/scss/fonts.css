@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "TD";
+    src: url("../fonts/ToyotaType-Book.otf") format("opentype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "TD";
+    src: url("../fonts/ToyotaType-Light.otf") format("opentype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "TD";
+    src: url("../fonts/ToyotaType-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "TD";
+    src: url("../fonts/ToyotaType-Semibold.otf") format("opentype");
+    font-weight: bold;
+}

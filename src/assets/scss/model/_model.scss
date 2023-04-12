@@ -1,0 +1,102 @@
+.models-slider{
+    width: 100vw;
+    height: 100vh;
+}
+
+.models{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    background-color: #333333;
+}
+
+.model{
+    display: grid;
+    grid-template-areas: 
+    "name name image image"
+    "pr10 pr20 image image"
+    "pr30 pr40 pr50 pr60"
+    "pr70 pr80 pr90 pr100";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
+
+}
+
+.model-cell{
+    background-color: #f1f1f1;
+}
+
+.image{
+    grid-area: image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.name{
+    grid-area: name;
+    padding: rem(10px);
+    display: flex;
+    align-items: center;
+
+    span{
+        font-weight: bold;
+        font-size: rem(40px);
+        line-height: 100%;
+    }
+}
+
+.price{
+    position: relative;
+    background-color: #CC0000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: rem(16px) rem(10px) ;
+    
+
+    .price-amount{
+        font-weight: bold;
+        font-size: rem(32px);
+    }
+
+    .price-km{
+        font-size: rem(18px);
+        color: #ebeaea;
+    }
+
+    &-10{
+        grid-area:pr10;
+    }
+    &-20{
+        grid-area:pr20;
+    }
+    &-30{
+        grid-area:pr30;
+    }
+    &-40{
+        grid-area:pr40;
+    }
+    &-50{
+        grid-area:pr50;
+    }
+    &-60{
+        grid-area:pr60;
+    }
+    &-70{
+        grid-area:pr70;
+    }
+    &-80{
+        grid-area:pr80;
+    }
+    &-90{
+        grid-area:pr90;
+    }
+    &-100{
+        grid-area:pr100;
+    }
+}

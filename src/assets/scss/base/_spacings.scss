@@ -1,0 +1,7 @@
+@function space-y($value) {
+  @return $value 0;
+}
+
+@function space-x($value) {
+  @return 0 $value;
+}
